@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Club</title>
+</head>
+<body>
+    <header>
+        <h1>Your Book Clubs</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Create a New Book Club</h2>
+            <form action="/create-club" method="POST">
+                <label for="name">Club Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+                <button type="submit">Create Club</button>
+            </form>
+        </section>
+        <section>
+            <h2>Your Clubs</h2>
+            <ul id="club-list">
+                <!-- List of book clubs will be populated here -->
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
